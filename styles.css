@@ -1,0 +1,76 @@
+/* Common Styles */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.launch-container, .lamp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    background-color: #ff5722;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: none; /* Initially hide the button */
+}
+
+button:hover {
+    background-color: #ff7043;
+}
+
+/* Launch Page Styles */
+
+.launch-container {
+    background-color: #fff3e0;
+}
+
+.upper-half {
+    text-align: center;
+}
+
+.lower-half {
+    margin-top: 50px;
+}
+
+/* Community Launch Page Styles */
+
+.lamp-container {
+    background-color: #ffcc80;
+}
+
+.lamp-container img {
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.lamp-container img:hover {
+    transform: scale(1.1);
+}
+
+.launch-info {
+    margin-left: 50px;
+}
+
+/* Global Styles */
+
+h1, h2 {
+    color: #ff5722;
+}
+
+p {
+    color: #424242;
+}

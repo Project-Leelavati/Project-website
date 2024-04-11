@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedic Pythonists - Community Launch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="launch-container">
+        <div class="lamp-container">
+            <img src="./Team Images/Unlightenedlamp.jpg" alt="Unlighted Lamp" onclick="lightLamp()">
+        </div>
+        <div class="launch-info">
+            <h2>Please lighten the lamp</h2>
+            <button id="proceedBtn" onclick="proceedToWebsite()">Let's proceed to website</button>
+        </div>
+    </div>
+
+    <script>
+        function lightLamp() {
+            document.querySelector('.lamp-container img').src = "./Team Images/Lightenedlamp.jpg";
+            document.querySelector('.launch-info h2').textContent = "Thank you so much";
+            document.getElementById("proceedBtn").style.display = "block";
+        }
+
+        function proceedToWebsite() {
+            window.location.href = "index.html"; // Change "index.html" to the home page of your main website
+        }
+    </script>
+</body>
+
+</html>
